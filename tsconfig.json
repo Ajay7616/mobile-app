@@ -3,15 +3,20 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@/*": ["./*"]
+    },
+    "types": ["node"]  // <-- Add this line
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "components/LoginScreen.jsx",
+    "app/_layout.jsx",
+    "app/(tabs)/profile.jsx",
+    "app/(tabs)/home.jsx",
+    "app/(tabs)/_layout.jsx",
+    "app/(tabs)/explore.jsx"
   ]
 }

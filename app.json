@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "education-app",
-    "slug": "education-app",
+    "name": "business-directory-app",
+    "slug": "business-directory",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.ajay7616.businessdirectoryapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +36,25 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "21df5f9b-3aed-4216-9e0c-e312192f1e40"
+      }
+    },
+    "owner": "ajay7616"
   }
 }
